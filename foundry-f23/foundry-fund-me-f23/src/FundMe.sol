@@ -16,7 +16,7 @@ contract FundMe {
     address private /* immutable */ i_owner;
     uint256 public constant MINIMUM_USD = 5 * 10 ** 18;
     AggregatorV3Interface private s_priceFeed;
-    
+   
     constructor(address priceFeed) {
         i_owner = msg.sender;
         s_priceFeed = AggregatorV3Interface(priceFeed);
@@ -33,7 +33,7 @@ contract FundMe {
         return s_priceFeed.version();
     }
     
-    modifier onlyOwner {
+    modifier onlyOwner{ 
         // require(msg.sender == owner);
         if (msg.sender != i_owner) revert FundMe__NotOwner();
         _;
