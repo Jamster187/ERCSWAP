@@ -43,14 +43,6 @@ Transfers the deposited NFTs and tokens from each participant to the other.
 
 This was one of my first Solidity projects. I wanted to get hands-on practice with calling external contracts (like NFT and token contracts), using structs to organize participant data, and writing a simple flow for an on-chain exchange.
 
-## Things I Would Improve Next Time
-
-- Add support for more users instead of just two hardcoded ones
-- Allow dynamic configuration of assets
-- Add timeout or cancel options
-- Write better checks and error handling
-- Look into best practices for handling deposits and swaps safely
-
 ## License
 
 MIT
